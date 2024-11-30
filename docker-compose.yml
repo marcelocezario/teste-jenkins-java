@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  teste-jenkins-java:
+    container_name: 'teste-jenkins-java'
+    build:
+      context: .
+    image: teste_jenkins_java_${BUILD_NUMBER:-default_value}
+    ports:
+      - 8081:8081
