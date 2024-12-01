@@ -11,9 +11,5 @@ public class UtilsTest {
         Assertions.assertEquals(6, Utils.sum(1, 2, 3));
         Assertions.assertEquals(10, Utils.sum(1, 2, 7));
         Assertions.assertEquals(2, Utils.sum(0, 2));
-
-        // Error test
-        Assertions.assertEquals(2, Utils.sum(0, 0));
-
     }
 }
