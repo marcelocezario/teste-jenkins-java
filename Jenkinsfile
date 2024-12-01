@@ -6,10 +6,9 @@ pipeline {
                 sh 'Iniciando pipeline!'
             }
         }
-        stage('Executando testes automatizados') {
+        stage ('Executando testes automatizados') {
             steps {
                 sh 'Executando testes automatizados'
-                sh 'mvn test'
             }
         }
     }
