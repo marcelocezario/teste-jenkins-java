@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('Iniciando pipeline') {
             steps {
-                sh 'Iniciando pipeline!'
+                echo 'Iniciando pipeline!'
             }
         }
         stage ('Executando testes automatizados') {
