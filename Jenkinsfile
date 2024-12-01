@@ -8,7 +8,7 @@ pipeline {
         }
         stage ('Executando testes automatizados') {
             steps {
-                sh 'Executando testes automatizados'
+                echo 'Executando testes automatizados'
             }
         }
     }
