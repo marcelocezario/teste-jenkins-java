@@ -6,10 +6,10 @@ pipeline {
                 sh 'Iniciando pipeline!'
             }
         }
-        stage('Preparar Ambiente') {
+        stage('Executando testes automatizados') {
             steps {
-                echo 'Preparando o ambiente...'
-                checkout scm
+                echo 'Executando testes automatizados'
+                mvn test
             }
         }
     }
