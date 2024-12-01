@@ -15,5 +15,12 @@ pipeline {
                 sh 'mvn test'
             }
         }
+        stage ('Criando build da aplicação') {
+            steps {
+                echo 'Criando build!'
+                sh 'docker compose build'
+                sh 'docker compose up'
+            }
+        }
     }
 }
